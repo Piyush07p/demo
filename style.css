@@ -1,46 +1,93 @@
 .navbar{
-width: 100%;
 height: 3rem;
-border: 2px solid;
+border-bottom: 2px solid gray;
+/* padding: 5px; */
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 10px;
 }
 *{
     margin: 0;
     padding: 0;
-
+box-sizing: border-box;
+font-family: 'Bricolage Grotesque', sans-serif;
 }
 .navbar ul{
     display: flex;
     justify-content: center;
-
+align-items: center;
 }
 .navbar ul li{
     margin: 1rem;
     list-style: none;
     cursor: pointer;
+    
+}
+.navbar ul li:hover a{
+    background-color: rgb(62, 62, 62);
+}
+.navbar ul li a{
+    text-decoration: none;
+    background-color: gray;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
 
 }
+
 .container{
     display: flex;
     justify-content: space-between;
-    height: 90vh;
+    height: 93vh;
 }
 .aside{
-    width: 16rem;
+    width: 18rem;
     height:100% ;
     position: relative;
     left: -16rem;
     transition: all ease 0.3s;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    margin:0 5px;
+    margin-right: 20px;
 }
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding:3px 11px;
+    /* background-color: rgb(208, 208, 208); */
+    margin: 6px 7px;
+    /* margin-top: 5px; */
+    border-radius: 10px;
+    /* border: 2px solid gray; */
+    background-color: #dededeb1;
 
+    
+}
+.menu h1{
+    font-size: 18px;
+    color: rgb(79, 78, 78);
+}
 .cross-btn{
     cursor: pointer;
-    position: absolute;
-    border: 1.5px solid;
-    padding: 4px;
-    top: 0.6rem;
-    background-color: green;
+    /* position: absolute; */
+    /* border: 1.5px solid; */
+    /* padding: 4px; */
+    /* top: 0.6rem; */
+    background-color: rgb(29, 198, 136);
     color: #fff;
-    left: 14rem;
+    /* left: 14rem; */
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    padding: 1px;
+
+    
 }
 .input_field{
      margin: 1rem;
@@ -52,10 +99,15 @@ border: 2px solid;
   position: absolute;
   top: 4.3rem;
   left: 1rem;
-  border: 1.5px solid;
-  padding:0px  4px;
+  border: 1.5px solid gray;
+  border-radius: 5px;
+  background-color: rgb(203, 203, 203);
+  padding:10px;
   font-size: 1.5rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
 }
 .list_container{
@@ -83,30 +135,42 @@ border: 2px solid;
  
 }
 .practice{
-    border: 2px solid;
+    border: 2px solid gray;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
     width: 90%;
     padding: 2rem;
     box-sizing: border-box;
+    margin-top: 10px;
 }
+.practice h1{
+padding-left: 15px;
+text-transform: capitalize;
 
+}
 .prac_ul{
     padding: 0.5rem;
 }
 
 .prac_ul li{
     list-style-type: none;
-    border: 1px solid greenyellow;
+    border: 1px solid rgb(90, 231, 29);
     margin: 0.6rem;
     height: 2rem;
     padding:0 1rem;    
     cursor: pointer;
     width: 25rem;
     position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
 }
 .prac_ul li::before{
    content: '+';
    text-align: center;
-   border: 1px solid;
+   /* border: 1px solid; */
    box-sizing: border-box;
    padding-top: 3px;
    width: 2rem;
@@ -115,31 +179,83 @@ border: 2px solid;
    right: 0;
    font-size:1.3rem;
    font-weight: 600;
+   background-color: rgb(151, 255, 151);
 }
 .prac_ul li:hover::before{
     color: #fff;
-    background-color: rgb(28, 184, 28);
+    background-color: rgb(13, 216, 13);
 }
 .clear_btn{
-    width:2rem;
-    background-color: red;
+    /* width:2rem; */
+    background-color: rgb(250, 36, 82);
     color: #fff;
     cursor: pointer;
     border: none;
-    height: 2rem;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    border:2px solid red;
+    /* height: 2rem; */
+    padding: 3px 1px;
+
+}
+.clear_btn svg{
+    height: 15px;
+    stroke-width: 3px;
+    color: rgb(255, 255, 255);
 }
 .add_btn{
-    width: 4rem;
-    height: 2rem;
+    /* width: 4rem; */
+    /* height: 2rem; */
     cursor: pointer;
+    border: 2px solid rgb(145, 230, 17);
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 3px 4px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(151, 255, 151);
+
+    
     
 }
+.add_btn:hover{
+    background-color: rgb(13, 216, 13);
+}
+.add_btn:hover svg{
+   color: rgb(255, 255, 255)
+}
+.add_btn svg{
+    color: rgb(47, 47, 47);
+}
+.data-input{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.data-input input{
+    padding: 4px 5px;
+    border: 2px solid rgba(128, 128, 128, 0.689);
+    border-radius:5px ;
+    font-size: 15px;
+    height: 35px;
+}
 .bookm{
-   border: 2px solid red;
+   border: 2px solid rgb(153, 153, 153);
     /* box-shadow:-2px 3px 5px  rgba(0,0,0,0.5) ; */
     height: 90%;
+    border-radius: 10px;
     overflow:auto ;
-    margin: 0.5rem;
+    margin: 0.3rem 0.5rem;
+
+}
+.bookmark{
+    font-size: 22px;
 }
 ::-webkit-scrollbar{
     background-color: rgb(189, 244, 189);
@@ -157,13 +273,18 @@ border: 2px solid;
 
     height: 20rem;
 }
+.bookmark_ul li svg{
+    height: 15px;
+}
 .bookmark_ul li{
-    border: 1px solid;
-    min-height: 1.5rem;
-    margin: 0.2rem;
-    padding: 0 0.5rem;
-    border-radius: 5px;
+    border-bottom: 1px solid gray;
+    min-height: 1.7rem;
+    margin: 0.3rem;
+    padding: 0 0.3rem;
     list-style-type: none;
+    display: flex;
+ align-items: center;
+ justify-content: left;
 }
 
 /* ------popup------- */
