@@ -11,44 +11,44 @@
 <body>
     <nav class="navbar">
         <ul>
-                 <li><a href="/">Home</a></li>
-                 <li><a href="cssEffect.html">Csseffect</a></li>
-                 <li><a href="pract.html">Practice</a> </li>
-                 <li><a href="">Contact</a> 
-                 </li>
+            <li><a href="/">Home</a></li>
+            <li><a href="cssEffect.html">Csseffect</a></li>
+            <li><a href="pract.html">Practice</a> </li>
+            <li><a href="">Contact</a>
+            </li>
         </ul>
     </nav>
-      <div class="pop-container">
-            <div class="pop-box">
-                <h3 class="pop_head">list cleared successfully</h3>
-            </div>
-      </div>
+    <div class="pop-container">
+        <div class="pop-box">
+            <h3 class="pop_head">list cleared successfully</h3>
+        </div>
+    </div>
     <div class="container">
 
         <!-- ------------------------(BOOK_MARK)--------------------- -->
 
         <div class="aside">
-            <div >
-                <h1 style="display: inline; padding: 0 10px;">Bookmark</h1>
-              <button  class="clear_btn" onclick="clears()">clear</button>
-                <span class="cross-btn" onclick="disp()">X</span>
-               
+            <div style="display: flex; justify-content: space-evenly; align-items: center;margin-top:5px;">
+                <h2 style="display: inline; ">Bookmark</h2>
+                <button class="clear_btn" onclick="clears()">clear</button>
+                <button class="cross-btn" onclick="disp()">close</button>
+
             </div>
             <div class="bookm">
                 <ul class="bookmark_ul">
-        
+
                 </ul>
             </div>
         </div>
         <span class="open-btn" onclick="sidebar()">=</span>
         <div class="practice">
-            <h1 >practice here</h1>
+            <h1>practice here</h1>
             <div>
                 <input class="input_field" onkeyup="searchfilter()" placeholder="search here..." type="text">
                 <button class="add_btn">add</button>
                 <div class="list_container">
                     <ul class="prac_ul">
-        
+
                     </ul>
                 </div>
             </div>
@@ -59,6 +59,7 @@
 <script src="script.js"></script>
 <script>
 
-     
+
 </script>
+
 </html>

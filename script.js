@@ -12,7 +12,7 @@ function sidebar(){
 }
 
 function disp(){
-  aside.style.left="-16rem"
+  aside.style.left="-17rem"
   openbtn.style.visibility="visible"
 }
 
@@ -56,7 +56,9 @@ let prac_ul=document.querySelector('.prac_ul')
       },2000)
       localStorage.setItem(`${Date.now()}`,`${ click[0].innerHTML}`)// key value pair
       pops("bookmarked successfully")
+      
      })
+     
   })
  
 
