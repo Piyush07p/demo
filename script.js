@@ -6,13 +6,13 @@ let pophead=document.querySelector('.pop_head')
 //   ----------(opening the sidebar)---------------
 
 function sidebar(){
-  aside.style.left="0.1rem"
+  aside.style.left="0.5rem"
   openbtn.style.visibility="hidden"
  
 }
 
 function disp(){
-  aside.style.left="-16rem"
+  aside.style.left="-17rem"
   openbtn.style.visibility="visible"
 }
 
@@ -76,7 +76,7 @@ let bookmark=document.querySelector('.bookmark_ul')
 
  Object.keys(localStorage).forEach((key)=>{
   let li2=document.createElement('li'); 
-  li2.innerHTML=`${localStorage.getItem(key)}`
+  li2.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bookmark"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>${localStorage.getItem(key)}`
   bookmark.appendChild(li2);
  })
 
