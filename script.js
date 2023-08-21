@@ -54,7 +54,7 @@ let prac_ul=document.querySelector('.prac_ul')
       setTimeout((e)=>{
       window.location.reload();
       },2000)
-      localStorage.setItem(`${Date.now()}`,`${ click[0].innerHTML}`)// key value pair
+      localStorage.setItem(`${Date.now()}`,`${elem.innerHTML}`)// key value pair
       pops("bookmarked successfully")
      })
   })
