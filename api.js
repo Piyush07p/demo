@@ -32,4 +32,16 @@ const arrdata=[
     {
         "prob":"Permutation with Spaces"
     },
+    {
+        "prob":"palindromic substring"
+    },
+    {
+        "prob":"spiral matrix"
+    },
+    {
+        "prob":"Permutation with Spaces"
+    },
+    {
+        "prob":"Permutation with Spaces"
+    },
 ]

@@ -46,7 +46,7 @@ let prac_ul=document.querySelector('.prac_ul')
  let i=0;
 
 
-  let click=document.querySelectorAll('.prac_ul li');
+ let click=document.querySelectorAll('.prac_ul li');
   
   click.forEach((elem)=>{
       elem.addEventListener("click",(e)=>{
@@ -54,11 +54,10 @@ let prac_ul=document.querySelector('.prac_ul')
       setTimeout((e)=>{
       window.location.reload();
       },2000)
-      localStorage.setItem(`${Date.now()}`,`${ click[0].innerHTML}`)// key value pair
+      localStorage.setItem(`${Date.now()}`,`${elem.innerHTML}`)// key value pair
       pops("bookmarked successfully")
      })
   })
- 
 
 
 //    localStorage.clear();
@@ -118,3 +117,22 @@ function pops(props){
   sidepop.style.setProperty('--scaler','scale(0,1)')
 }
 
+
+// ------------------()--------
+let to_add=document.querySelector('.to_add')
+let addinput=document.querySelector('.addinput')
+
+ const addlist=(check)=>{
+   if(check) to_add.style.top="1rem"
+   else {
+    let inp_data=addinput.value;
+    if(!inp_data) {alert("add item first")}
+    else{
+      let li=document.createElement('li'); 
+      li.innerHTML=`${inp_data}`
+      prac_ul.appendChild(li); 
+      to_add.style.top="-11rem"
+      pops("item added to the list")
+    }
+   }
+ }

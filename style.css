@@ -112,7 +112,8 @@
     }
     .list_container{
         display: flex;
-    
+        height: 72vh;
+        overflow: auto;    
     }
     .save_ul{
         padding: 0.4rem 0;
@@ -320,3 +321,31 @@
         transition: all 2.5s ease;
     }
     
+    /* ----------------------(to_add)------------------------ */
+
+.to_add{
+    border: 2px solid rgb(50, 147, 50);
+    padding: 0.2rem;
+    height: 10rem;
+    position: absolute;
+    top: -11rem;
+    transition: all ease 0.5s;
+    transform: translateX(50%);
+    width: 24rem;
+    background-color: #fff;
+
+}
+.to_add h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.to_add input{
+   width: 20rem; 
+   height: 2rem;
+   margin: 3rem 0;
+}
+.to_add button{
+    width: 3rem;
+    height: 2rem;
+    cursor: pointer;
+}

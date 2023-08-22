@@ -33,7 +33,12 @@
         <div class="aside">
             <div class="menu">
                 <h1 class="bookmark" style="display: inline;">Bookmark</h1>
-                <button class="clear_btn" onclick="clears()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rotate-ccw"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg></button>
+                <button class="clear_btn" onclick="clears()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-rotate-ccw">
+                        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+                        <path d="M3 3v5h5" />
+                    </svg></button>
                 <span class="cross-btn" onclick="disp()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" class="lucide lucide-x">
@@ -41,37 +46,55 @@
                         <path d="m6 6 12 12" />
                     </svg>
                 </span>
-
+        
             </div>
             <div class="bookm">
                 <ul class="bookmark_ul">
-
+        
                 </ul>
             </div>
         </div>
-        <span class="open-btn" onclick="sidebar()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-blocks"><rect width="7" height="7" x="14" y="3" rx="1"/><path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"/></svg></span>
+        <span class="open-btn" onclick="sidebar()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-blocks">
+                <rect width="7" height="7" x="14" y="3" rx="1" />
+                <path d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3" />
+            </svg></span>
+
+       <!-- -----------------((add popup))----------------------- -->
+
+            <div class="to_add">
+                <h1>add item</h1>
+                <input placeholder="type item" class="addinput" type="text"> 
+                <button onclick="addlist(false)">add</button>
+            </div>
+
+      <!-- ----------------------------(())----------------------- -->
         <div class="practice">
             <h1>practice here</h1>
             <div>
-<div class="data-input">
-    
-    <input class="input_field" onkeyup="searchfilter()" placeholder="search here..." type="text">
-    <button class="add_btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg></button>
-</div>
+                <div class="data-input">
+                    <input class="input_field" onkeyup="searchfilter()" placeholder="search here..." type="text">
+                    <button onclick="addlist(true)" class="add_btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-plus">
+                            <path d="M5 12h14" />
+                            <path d="M12 5v14" />
+                        </svg></button>
+                </div>
                 <div class="list_container">
                     <ul class="prac_ul">
-
+        
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+        </div>
+        </body>
+
+<!-- ------------------(js_script)------------------- -->
+
 <script src="api.js"></script>
 <script src="script.js"></script>
-<script>
-
-
-</script>
 
 </html>
